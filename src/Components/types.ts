@@ -1,0 +1,1 @@
+export type BoxState = 'X'| 'O'| null
