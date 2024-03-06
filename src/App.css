@@ -1,3 +1,23 @@
+#Main-Screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+
+#Main-Screen h1 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
+
+
+#Turn {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
 .Box{
   width: 85px;
   height: 85px;
@@ -8,5 +28,13 @@
   font-size: 35px;
   
 }
+
+.Board{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 30px auto;
+}
+
 
 

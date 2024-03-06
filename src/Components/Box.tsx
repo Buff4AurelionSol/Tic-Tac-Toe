@@ -1,22 +1,11 @@
 import { useState } from "react"
-import { BoxState } from "./types" 
-export const Box = () => {
+import { BoxState } from "./types"
+import { BoxProps } from "./types"
 
-    const [valueBox, setValueBox] = useState<BoxState>(null)
-
-    const getValue = () =>{
-        if(valueBox == null){
-            setValueBox('X')
-        }else if(valueBox=== 'X'){
-            setValueBox('O')
-        }else{
-            setValueBox(null)
-        }
-    }
-
+export const Box = ({index, changeTurn}:BoxProps) => {
     return(
-        <div className="Box" onClick={getValue}>
-            {valueBox}
+        <div className="Box" onClick={changeTurn}>
+           {index}
         </div>
     )
 }
