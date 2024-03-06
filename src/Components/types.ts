@@ -9,6 +9,7 @@ export type BoxProps = {
 export type BoardProps = {
     turn: string,
     updateTurn: (newTurn: string) => void,
+    resetTurn: () => void
     
 }
 

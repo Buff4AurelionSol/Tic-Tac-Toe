@@ -2,7 +2,7 @@ import { Box } from "./Box"
 import { BoardProps } from "./types"
 import { useState } from "react"
 
-export const Board = ({turn, updateTurn}:BoardProps) => {
+export const Board = ({turn, updateTurn, resetTurn}:BoardProps) => {
     const Boxes = Array(9).fill(null)
     const [board, setBoard] = useState( Boxes)
     const [winner, setWinner] = useState(false)
@@ -21,6 +21,8 @@ export const Board = ({turn, updateTurn}:BoardProps) => {
     
     const resetBoard = () =>{
         setBoard(Boxes)
+        setWinner(false)
+        resetTurn()
     }
 
     const updateBoard = (index:number) => {

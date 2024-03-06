@@ -10,10 +10,14 @@ function App() {
     setTurn(newTurn)
   }
 
+  const resetTurn = () => {
+    setTurn('X')
+  }
+
   return (
     <div id='Main-Screen'>
       <h1>¡Tic tac Toe!</h1>
-      <Board turn={turn} updateTurn={updateTurn}/>
+      <Board turn={turn} updateTurn={updateTurn} resetTurn={resetTurn}/>
       <Turn turn={turn} />
     </div>
   )
