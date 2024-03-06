@@ -36,5 +36,25 @@
   margin: 30px auto;
 }
 
+#WinnerTitle{
+  text-align: center;
+  color:black;
+  font-size: 18px;
+}
+
+#SectionClean{
+  display: flex;
+  justify-content: center;
+}
+
+.Clean{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+  background-color: cornflowerblue;
+}
+
 
 

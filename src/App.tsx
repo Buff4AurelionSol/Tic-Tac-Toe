@@ -14,7 +14,7 @@ function App() {
     <div id='Main-Screen'>
       <h1>¡Tic tac Toe!</h1>
       <Board turn={turn} updateTurn={updateTurn}/>
-      <Turn turn={turn} />  
+      <Turn turn={turn} />
     </div>
   )
 }

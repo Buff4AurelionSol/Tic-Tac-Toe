@@ -2,12 +2,14 @@ export type BoxState = 'X'| 'O'| null
 
 export type BoxProps = {
     index: number,
-    changeTurn: () => void
+    updateBoard: (index: number) => void,
+    value: string
 }
 
 export type BoardProps = {
     turn: string,
-    updateTurn: (newTurn: string) => void
+    updateTurn: (newTurn: string) => void,
+    
 }
 
 export type TurnProps = {

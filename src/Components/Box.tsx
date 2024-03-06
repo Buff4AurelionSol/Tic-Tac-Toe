@@ -1,11 +1,9 @@
-import { useState } from "react"
-import { BoxState } from "./types"
 import { BoxProps } from "./types"
 
-export const Box = ({index, changeTurn}:BoxProps) => {
+export const Box = ({index, updateBoard, value}:BoxProps) => {
     return(
-        <div className="Box" onClick={changeTurn}>
-           {index}
+        <div className="Box" onClick={()=> updateBoard(index)}>
+           {value}
         </div>
     )
 }
